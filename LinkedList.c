@@ -107,7 +107,7 @@ int deleteFromList(int value)
 			delNode = prevNode->nextNode;
 			prevNode->nextNode = delNode->nextNode;
 			if (delNode == current)
-				current = prevNode->nextNode;
+				current = prevNode;
 		}
 		free(delNode);
 		return(1);
